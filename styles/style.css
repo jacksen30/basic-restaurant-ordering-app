@@ -86,10 +86,13 @@ select {
 
 }
 
-/* body {
-    display: flex;
-    flex-direction: column;
-} */
+body {
+    /* display: flex;
+    flex-direction: column; */
+
+    font-family: "Smythe", system-ui;
+    font-weight: 400;
+}
 
 .header {
   background-image: url(../images/header-background.png);
@@ -126,4 +129,52 @@ select {
   border-radius: 100%;
   border: 1px solid gray;
   background-color: white;
+}
+
+.pre-checkout-wrapper {
+  padding: 0px 16px;
+}
+
+.pre-checkout-wrapper h2 {
+  margin: 1rem 0rem;
+  text-align: center;
+}
+
+/* .checkout-total-cost-wrapper {
+  border-top: 2px solid black;
+} */
+
+.item-in-basket,
+.checkout-total-cost-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.item-in-basket .item-in-basket_price,
+.checkout-total-cost-wrapper .checkout-total_price {
+  margin-left: auto;
+}
+
+.complete-checkout-btn button {
+  color: #FFF;
+  background-color: #16AA2D;
+  width: 100%;
+}
+
+/* hr {
+  background-color: black;
+} */
+
+.heading-28 {
+  font-size: 28px;
+
+}
+
+.sub-heading-16 {
+  font-size: 16px;
+  color: gray;
+}
+
+.heading-price-20 {
+  font-size: 20px;
 }
